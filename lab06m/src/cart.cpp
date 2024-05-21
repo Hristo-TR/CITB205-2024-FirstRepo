@@ -5,7 +5,7 @@ Cart::Cart() : discount(NULL)
 {
 }
 
-void Cart::add(string productName, double unitPrice, unsigned qty)
+void Cart::add(Product product, unsigned qty)
 {
     products.push_back(Product(productName, unitPrice, qty));
 }
